@@ -1,4 +1,9 @@
 @media screen and (max-width: 1000px) {
+    .button{
+        margin-top: 10%;
+    }
+    
+    
     .content__body{
         margin-top: clamp(4%, 5%, 6%);
         justify-content: start;
