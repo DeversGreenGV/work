@@ -58,26 +58,29 @@
     .reviews__item {
         flex-direction: column;
         align-items: center;
-        container-type: inline-size;
+       
+    }
+    .slick-slider{
+        padding: 0 0%;
     }
     .reviews__item .image {
-        width: 70cqi;
-        height: 70cqi;
+        width: 52cqi;
+        height: 52cqi;
     }
     .reviews__body{
         margin-left: 0;
-        margin: 0 15cqi ;
+        margin: 0 4cqi ;
     }
     .reviews__body .name {
 
         text-align: center;
-        font-size: 10cqi;
+        font-size: 8cqi;
         margin: 2vh 0;
     }
     .reviews__body .text {
-        text-align: center;
-        font-size: 7cqi;
-        line-height: 24px;
+        text-align: justify;
+        font-size: 4.6cqi;
+        line-height: 30px;
     }
 
     .promo-two__container {
@@ -95,8 +98,8 @@
        
     }
     .promo-two__text .text {
-        font-size: 3cqi;
-        line-height: 24px;
+        font-size: 5cqi;
+        line-height: 30px;
         margin-bottom: 3vh;
     }
     .promo-two__properties {
@@ -114,7 +117,7 @@
         margin-top: 2vh;
         
         font-weight: 300;
-        font-size: 3cqi;
+        font-size: 5cqi;
     }
 
 
