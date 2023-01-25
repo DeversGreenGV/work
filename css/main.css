@@ -38,7 +38,7 @@ hr{
     width: clamp(15%, 20%, 20%);;
 
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 10%;
     padding: 15px 20px;
     border:  3px solid azure;
     /* background-color: cadetblue; */
@@ -116,14 +116,14 @@ img{
 
 .header__title{
     text-align: center;
-    font-size: clamp(16px, 2.2cqi ,40px);
+    font-size: clamp(25px, 2.2cqi ,40px);
     font-weight: 500;
 
 }
 
 .header__subtitle{
     text-align: center;
-    font-size: clamp(16px,1.7cqi,26px);
+    font-size: clamp(15px,1.7cqi,26px);
     font-weight: 400;
 }
 
@@ -133,9 +133,11 @@ img{
 
 .content__body{
     display: flex;
-    margin-top: 5cqi;
+    margin-top : clamp(4%, 5%, 6%);
+   
+    /* margin: 10% 0; */
     justify-content: center;
-    margin-bottom: 40px;
+   
 }
 
     .content__body .image{
@@ -166,9 +168,10 @@ img{
     display: flex;
     align-items: center;
     height: max-content;
+    font-size: clamp(15px,1.7cqi,26px);
 }
     .list__title span{
-        font-size: 1.8cqi;
+        font-size: clamp(18px,1.8cqi,26px);
         margin-right: 15px;
     }
 .content__button{

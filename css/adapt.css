@@ -1,0 +1,16 @@
+@media screen and (max-width: 1000px) {
+    .content__body{
+        margin-top: clamp(4%, 5%, 6%);
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+    }
+        .content__body .image{
+           margin-bottom: clamp(4%, 5%, 6%) ;
+            width: 36cqw;
+            height: 36cqw;
+        }
+    .list__title{
+        
+    }
+}
