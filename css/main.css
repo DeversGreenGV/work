@@ -1,0 +1,494 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: azure;
+}
+
+body{
+    flex: none;
+    overflow: auto;
+    height: 100vh;
+}
+
+/* !!!!!!!!!!!!!! Повторяющиеся блоки !!!!!!!!! */
+
+section{
+    height: 110vh;
+    flex: none;
+    width: 100%;
+    padding: 0 5%;
+    padding-top: 6vh;
+}
+section:first-child{
+    padding: 0 0;
+    
+}
+
+hr{
+    border: 0;
+    border: 5px;
+    width: 50%;
+    height: 2px;
+    /* background-color: chocolate; */
+}
+
+.button{
+    width: clamp(15%, 20%, 20%);;
+
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 15px 20px;
+    border:  3px solid azure;
+    /* background-color: cadetblue; */
+    border-radius: 8px;
+    cursor: pointer;
+}
+.button p{
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+img{
+    display: block;
+    max-height: 100%;
+}
+
+
+.image{
+    width: 23cqw;
+    height: 23cqw;
+}
+
+    .image img{
+        margin: 0 auto;
+    }
+
+/* !!!!!!!!!!!!!! Повторяющиеся блоки !!!!!!!!! */
+
+
+/* !!!!!!!!!!!!!! ПРОМО !!!!!!!!! */
+
+.promo{
+    position: relative;
+    
+    text-shadow: 3px 3px 3px #469597;
+  
+}
+.background{
+    width: 100%;
+    height: 100%;
+    background-color: #46969762;
+    z-index: 2;
+    /* position: absolute; */
+}
+
+.video{
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.content{
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5%;
+}
+.header{
+
+}
+
+    .header hr{
+        background-color: azure;
+        height: clamp(2px,3px, 3px);
+        margin: 10px auto;
+        box-shadow:  3px 3px 3px #469597;
+    }
+
+.header__title{
+    text-align: center;
+    font-size: clamp(16px, 2.2cqi ,40px);
+    font-weight: 500;
+
+}
+
+.header__subtitle{
+    text-align: center;
+    font-size: clamp(16px,1.7cqi,26px);
+    font-weight: 400;
+}
+
+.promo__title{
+    font-size: 2cqi;
+}
+
+.content__body{
+    display: flex;
+    margin-top: 5cqi;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+    .content__body .image{
+        width: 18cqw;
+        height: 18cqw;
+    }
+
+.list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+}
+
+.list__item{
+    margin-bottom: 25px;
+    font-size: 1.4cqi;
+    font-weight: 400;
+}
+    .list__item hr{
+        height: 2px;
+        width: 100%;
+        background-color: darkslateblue ;
+        border: 0;
+        border-radius: 5px;
+    }
+.list__title{
+    display: flex;
+    align-items: center;
+    height: max-content;
+}
+    .list__title span{
+        font-size: 1.8cqi;
+        margin-right: 15px;
+    }
+.content__button{
+
+    text-shadow: none;
+}
+
+/* !!!!!!!!!!!!!! ПРОМО !!!!!!!!! */
+
+
+/* !!!!!!!!!!!!!! СОСТАВ !!!!!!!!! */
+
+.composition{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    background: -webkit-linear-gradient(90deg, #8c93d3,#84cee1,#dcf7e5);
+    background: linear-gradient(90deg, #8c93d3,#84cee1,#dcf7e5);
+    container-type: inline-size;
+}
+.composition__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+    .composition .image{
+        width: 30cqw;
+        height: 15cqw;
+    }
+    .composition .list{
+        height: 80%;
+        width: 30%;
+    }
+    .composition .list__item{
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+       container-type: inline-size;
+    }
+        .composition .list:last-child .list__item{
+            flex-direction: row-reverse;
+        }
+        .composition .list:last-child .list__caption{
+            text-align: end;
+        }
+    .composition .list__image-circle{
+        width: 25cqw;
+        height: 25cqw;
+        background-color: gray;
+        border-radius: 50%;
+        margin: 0 16px;
+        border: 4px solid azure;
+
+        overflow: hidden;
+    }
+    .composition .list__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
+    }
+    
+    .composition .list__caption{
+        /* color: #DDBEAA; */
+        font-size: 4cqi;
+         margin-bottom: 10px;
+     }
+    .composition .list__desc{
+       font-size: 5cqi;
+        
+    }
+    .composition .button{
+        position: absolute;
+        margin-top: 0;
+        top: 75%;
+     
+    }
+    
+/* !!!!!!!!!!!!!! СОСТАВ !!!!!!!!! */
+
+/* !!!!!!!!!!!!!! ОТЗЫВЫ !!!!!!!!! */
+
+.reviews{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: -webkit-linear-gradient(180deg, #adc5e1,#659fe2,#609ce0,#609ce1);
+    background: linear-gradient(180deg, #adc5e1,#659fe2,#609ce0,#609ce1);
+}
+.reviews__list{
+    width: 100%;
+    min-width: 0;
+    display: flex;
+}
+.reviews__item{
+    display: flex;
+    min-width: 0;
+    
+}
+    .reviews__item .image{
+        width: 15cqi;
+        height: 15cqi;
+        background-color: #8ec5fc;
+        border-radius: 8px;
+        border: 5px solid azure;
+    }
+.reviews__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 40px;
+}
+    .reviews__body .name{
+       font-size: 3cqi;
+    }
+    .reviews__body .text{
+        text-align: justify;
+        font-size: 1.3cqi;
+        line-height: 30px;
+    }
+
+/* !!!!!!!!!!!!!! ОТЗЫВЫ !!!!!!!!! */
+
+/* !!!!!!!!!!!!!! ПРОМО-2 !!!!!!!!! */
+
+.promo-two{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    background: -webkit-linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+.promo-two__container{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.promo-two__text{
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+
+    .promo-two__text .text{
+        height: max-content;
+        font-size: 1.5cqi;
+        line-height: 45px;
+    }
+.promo-two__properties{
+    width: 80%;
+    margin: 80px 0;
+}
+    .promo-two__properties ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .promo-two__properties li{
+        display: flex;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 1.5cqi;
+    }
+    .promo-two .button{
+        margin-top: 0;
+
+    }
+
+/* !!!!!!!!!!!!!! ПРОМО-2 !!!!!!!!! */
+
+/* !!!!!!!!!!!!!! ФОРМА !!!!!!!!! */
+
+.order-form{
+    text-align: center;
+    background: -webkit-linear-gradient(180deg, #28a1af,#0085d4,#0853da);
+    background: linear-gradient(180deg, #28a1af,#0085d4,#0853da);
+}
+
+.order-form__name{
+    font-size: 1.8cqi;
+    margin-bottom: 20px;
+}
+
+.timer{
+    font-size: 1.6cqi;
+    margin-bottom: 90px;
+}
+.timer__title{
+    margin-bottom: 10px;
+}
+.timer__count{
+    font-weight: bold;
+    font-size: 1.8cqi;
+}
+
+.order-form__container{
+    display: flex;
+    padding: 0 15%;
+    justify-content: space-evenly;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+
+}
+    .product .image{
+        width: 16cqi;
+        height: 16cqi ;
+    }
+.price{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.new-price{
+    font-size: 2cqi;
+    
+}
+ .new-price { /* Анимация цены */
+    text-transform: uppercase;
+    background-image:linear-gradient(45deg, #1ac4db,#00c495,#8ccc14);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.old-price{
+    font-size: 1.5cqi;
+    position: relative;
+    height: max-content;
+}
+    .old-price hr{
+        position: absolute;
+        top: 50%;
+        left: -10%;
+        width: 120%;
+        transform: rotate(354deg);
+        height: 4px;
+        border-radius: 6px;
+        background-color: azure;
+    }
+form{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid #16354D;
+    border-radius: 10px;
+    padding: 30px;
+}
+.input__block{
+    position: relative;
+    display: flex;
+    /* max-width: 200px; */
+    justify-content: space-between;
+    padding-top: 30px;
+}
+    .input__block:last-child{
+        justify-content: center;
+        align-items: center;
+    }
+    .input__block label{ 
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        color: #6B99C3;
+        font-size: 1.1cqi;
+    }
+    .hint{
+        position: absolute;
+        top: 35px;
+        right: 10px;
+        color: #6B99C3;
+        font-size: 13px;
+
+    }
+    .input__block input{
+        padding: 0 15px;
+        height: 40px;
+        background: white;
+        border: 2px solid #6B99C3;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        width: 250px;
+        color: #6B99C3;
+        font-size: 0.8cqi;
+        z-index: 2;
+    }
+    .input__block input:focus{
+        color:#16354D;
+        border-color:#16354D;
+    }
+        .input__block input:focus ~ span{
+            top: 5px;
+        }
+    .input__block input[type=button]{
+        cursor: pointer;
+        color: #6B99C3;
+    }
+    .input__block input[type=button]:focus{
+        color:#16354D;
+    }
