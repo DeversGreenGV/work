@@ -35,11 +35,10 @@ hr{
 }
 
 .button{
-    width: clamp(15%, 20%, 20%);;
 
     margin: 0 auto;
     margin-top: 10%;
-    padding: 15px 20px;
+    padding: 15px 40px;
     border:  3px solid azure;
     /* background-color: cadetblue; */
     border-radius: 8px;
@@ -47,8 +46,9 @@ hr{
 }
 .button p{
     text-align: center;
-    font-size: 1.3vw;
+    font-size: clamp(15px,1.7cqi,26px);
     font-weight: 400;
+
 }
 
 img{
