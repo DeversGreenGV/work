@@ -3,15 +3,17 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 6000,
     });
-    $(".button").click(function() { // ID откуда кливаем
+
+    $(".button").click(function() { 
         $('html, body').animate({
-        scrollTop: $(".order-form").offset().top // класс объекта к которому приезжаем
-        }, 1000); // Скорость прокрутки
+        scrollTop: $(".order-form").offset().top 
+        }, 1000); 
     });
-    $(".button").on("tap",function() { // ID откуда кливаем
+
+    $(".button").on("tap",function() { 
         $('html, body').animate({
-        scrollTop: $(".order-form").offset().top // класс объекта к которому приезжаем
-        }, 1000); // Скорость прокрутки
+        scrollTop: $(".order-form").offset().top 
+        }, 1000); 
     });
    
 });

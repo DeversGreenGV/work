@@ -1,87 +1,117 @@
 @media screen and (max-width: 1000px) {
+
+    /* !!!!!!!!!!!!!! Повторяющиеся блоки !!!!!!!!! */
+
     .button{
         margin-top: 6vh;
     }
     
-    
+    /* !!!!!!!!!!!!!! Повторяющиеся блоки !!!!!!!!! */
+
+    /* !!!!!!!!!!!!!! ПРОМО !!!!!!!!! */
+
     .content__body{
         margin-top: clamp(4%, 5%, 6%);
         justify-content: start;
         flex-direction: column;
         align-items: center;
     }
+
         .content__body .image{
            margin-bottom: clamp(4%, 5%, 6%) ;
             width: 36cqw;
             height: 36cqw;
         }
+
     .list__title{
         
     }
 
+    /* !!!!!!!!!!!!!! ПРОМО !!!!!!!!! */
+
+    /* !!!!!!!!!!!!!! СОСТАВ !!!!!!!!! */
+
     .composition {
         justify-content: start;
     }
+
     .composition__container{
         flex-direction: column;
     }
+
     .composition .image{
         order: -1;
         width: 36cqw;
         height: 36cqw;
         margin-bottom: 5vh;
     }
+
     .composition .list {
         height: auto;
         width: 100%;
     }
+
     .composition .list__image-circle{
         margin: 0;
         border: 2px solid azure;
     }
+
     .composition .list__desc {
         font-size: 4cqi;
     }
+
         .composition .list:last-child .list__item{
             flex-direction: row;
         }
+
         .composition .list:last-child .list__caption{
             text-align: start;
         }
+
     .composition .button {
         position: relative;
         margin-top: 0;
         top: 0;
     }
 
+    /* !!!!!!!!!!!!!! СОСТАВ !!!!!!!!! */
+
+    /* !!!!!!!!!!!!!! ОТЗЫВЫ !!!!!!!!! */
 
     .reviews__item {
         flex-direction: column;
         align-items: center;
-       
     }
+
     .slick-slider{
         padding: 0 0%;
     }
+
     .reviews__item .image {
         width: 52cqi;
         height: 52cqi;
     }
+
     .reviews__body{
         margin-left: 0;
         margin: 0 4cqi ;
     }
-    .reviews__body .name {
 
+    .reviews__body .name {
         text-align: center;
         font-size: 8cqi;
         margin: 2vh 0;
     }
+
     .reviews__body .text {
         text-align: justify;
         font-size: 4.6cqi;
         line-height: 30px;
     }
+
+    /* !!!!!!!!!!!!!! ОТЗЫВЫ !!!!!!!!! */
+
+    /* !!!!!!!!!!!!!! ПРОМО-2 !!!!!!!!! */
 
     .promo-two__container {
         width: 100%;
@@ -89,30 +119,35 @@
         align-items: center;
         container-type: inline-size;
     }
+
     .promo-two__container .image {
         width: 60cqw;
         height: 60cqw;
     }
+
     .promo-two__text {
         width: 100%;
-       
     }
+
     .promo-two__text .text {
         font-size: 5cqi;
         line-height: 30px;
         margin-bottom: 3vh;
     }
+
     .promo-two__properties {
         width: 100%;
         margin: 0 0;
         margin-bottom: 5vh;
     }
+
     .promo-two__properties ul {
         width: 100%;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
+
     .promo-two__properties li {
         margin-top: 2vh;
         
@@ -120,26 +155,27 @@
         font-size: 5cqi;
     }
 
+    /* !!!!!!!!!!!!!! ПРОМО-2 !!!!!!!!! */
+
+    /* !!!!!!!!!!!!!! ФОРМА !!!!!!!!! */
 
     .order-form__container {
         display: flex;
         flex-direction: column;
         padding: 0 0;
         justify-content: space-evenly;
-
     }
 
     .product{
         width: 100%;
         flex-direction: row;
-
-    
     }
     
     .product .image {
         width: 50%;
         height: 30vh;
     }
+
     .price{
         margin-top: 0;
         width: 50%;
@@ -173,7 +209,9 @@
         color: #6B99C3;
         font-size: 4cqi;
     }
+    /* !!!!!!!!!!!!!! ФОРМА !!!!!!!!! */
 
+    
     .reviews__list .slick-arrow{
         opacity: 0;
     }
