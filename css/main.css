@@ -26,7 +26,7 @@ section{
 section:first-child{
     padding-top: 0;
     padding-left: 0;
-    
+    padding-right: 0;
 }
 
 hr{
@@ -100,7 +100,7 @@ img{
 
 .content{
     /* z-index: 1000; */
-    width: 100%;
+    width: 105%;
     display: flex;
     flex-direction: column;
     padding-top: 5vh;
@@ -177,7 +177,9 @@ img{
         margin-right: 15px;
     }
 .content__button{
-
+    position: relative;
+    z-index: 1000;
+    width: max-content;
     text-shadow: none;
 }
 
