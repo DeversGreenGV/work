@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.reviews__list').slick({
-        autoplay: true,
-        autoplaySpeed: 6000,
+        // autoplay: true,
+        // autoplaySpeed: 6000,
     });
     $(".button").click(function() { // ID откуда кливаем
         $('html, body').animate({

@@ -18,4 +18,108 @@
     .list__title{
         
     }
+
+    .composition {
+        justify-content: start;
+    }
+    .composition__container{
+        flex-direction: column;
+    }
+    .composition .image{
+        order: -1;
+        width: 36cqw;
+        height: 36cqw;
+        margin-bottom: 5vh;
+    }
+    .composition .list {
+        height: auto;
+        width: 100%;
+    }
+    .composition .list__image-circle{
+        margin: 0;
+        border: 2px solid azure;
+    }
+    .composition .list__desc {
+        font-size: 4cqi;
+    }
+        .composition .list:last-child .list__item{
+            flex-direction: row;
+        }
+        .composition .list:last-child .list__caption{
+            text-align: start;
+        }
+    .composition .button {
+        position: relative;
+        margin-top: 0;
+        top: 0;
+    }
+
+
+    .reviews__item {
+        flex-direction: column;
+        align-items: center;
+        container-type: inline-size;
+    }
+    .reviews__item .image {
+        width: 70cqi;
+        height: 70cqi;
+    }
+    .reviews__body{
+        margin-left: 0;
+        margin: 0 15cqi ;
+    }
+    .reviews__body .name {
+
+        text-align: center;
+        font-size: 10cqi;
+        margin: 2vh 0;
+    }
+    .reviews__body .text {
+        text-align: center;
+        font-size: 7cqi;
+        line-height: 24px;
+    }
+
+    .promo-two__container {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        container-type: inline-size;
+    }
+    .promo-two__container .image {
+        width: 60cqw;
+        height: 60cqw;
+    }
+    .promo-two__text {
+        width: 100%;
+       
+    }
+    .promo-two__text .text {
+        font-size: 3cqi;
+        line-height: 24px;
+        margin-bottom: 3vh;
+    }
+    .promo-two__properties {
+        width: 100%;
+        margin: 0 0;
+        margin-bottom: 5vh;
+    }
+    .promo-two__properties ul {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .promo-two__properties li {
+        margin-top: 2vh;
+        
+        font-weight: 300;
+        font-size: 3cqi;
+    }
+
+
+
+    .reviews__list .slick-arrow{
+        opacity: 0;
+    }
 }
